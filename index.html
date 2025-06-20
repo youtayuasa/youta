@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Pages ハンズオン</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header id="header-component">
+        <div class="header-title">ポートフォリをを作ろう！</div>
+        <div class="header-hamburger-component">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label class="menu-button">
+                <span></span>
+            </label>
+
+            <nav class="slide-menu">
+                <ul id="slide-menu-ul">
+                    <div><strong style="font-size:2.0em" class="toc-box">目次</strong></div>
+                    <li><a href="#top">トップ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="contents-container">
+            <!--この中にWebページの内容を書きます。-->
+            <h1>Profile</h1>
+            <div id="profile-container">
+                <div class="profile-content">
+                    <div class="profile-icon">
+                        <img src="./images/TestUser.png" alt="プロフィールアイコン" draggable="false" class="no-drag" />
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile">
+                            <p class="name">Test User
+                                <!--ここに名前を入力-->
+                            </p>
+                            <p class="label">所属<span class="content">東海大学</span></p>
+                            <p class="label">趣味<span class="content">ゲーム</span></p>
+                            <p class="label">自己紹介<span class="content">暑いの嫌いです。</span></p>
+
+                            <div class="sns-links">
+                                <!--URLを自分のものに書き換える-->
+                                <a href="https://twitter.com/yourhandle" target="_blank" class="sns-link">
+                                    <img src="./images/sns_logo/x.svg" alt="Twitterロゴ" />
+                                    X(旧Twitter)
+                                </a>
+                                <a href="https://github.com/yourhandle" target="_blank" class="sns-link">
+                                    <img src="./images/sns_logo/github.svg" alt="GitHubロゴ" />
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ↓記事のテンプレ
+            <h1>タイトル</h1>
+            <div class="article-container">
+                <p>内容</p>
+                <img src="./images/title-image.png" alt="画像">
+            </div>
+            -->
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://x.com/Tokai_ATLEG" target="_blank">&copy;2025 ALTEGプログラミングサークル</a>
+        </p>
+    </footer>
+    <div id="err-size">
+        <div class="err-box">
+            <h1 class="ignore-index">⚠ 画面が小さすぎます</h1>
+            <p>このページはより広い画面での表示を推奨しています。</p>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
