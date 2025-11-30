@@ -1,83 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Pages ハンズオン</title>
-    <link rel="icon" href="">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>湯浅陽太 | Personal Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header id="header-component">
-        <div class="header-title">Test　Titile</div>
-        <div class="header-hamburger-component">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label class="menu-button">
-                <span></span>
-            </label>
-
-            <nav class="slide-menu">
-                <ul id="slide-menu-ul">
-                    <div><strong style="font-size:2.0em" class="toc-box">目次</strong></div>
-                    <li><a href="#top">トップ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div id="contents-container">
-            <!--この中にWebページの内容を書きます。-->
-            <h1>Profile</h1>
-            <div id="profile-container">
-                <div class="profile-content">
-                    <div class="profile-icon">
-                        <img src="./images/TestUser.png" alt="プロフィールアイコン" draggable="false" class="no-drag" />
-                    </div>
-                    <div class="profile-info">
-                        <div class="profile">
-                            <p class="name">
-                                <湯浅陽太>
-                            </p>
-                            <p class="label">所属<span class="content">東海大学</span></p>
-                            <p class="label">趣味<span class="content">旅行</span></p>
-                            <p class="label">自己紹介<span class="content">プログラミング初心者です。</span></p>
-
-                            <div class="sns-links">
-                                <!--URLを自分のものに書き換える-->
-                                 3CJE2136@tokai.ac.jp
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ↓記事のテンプレ
-            <h1>タイトル</h1>
-            <div class="article-container">
-                <p>内容</p>
-                <img src="./images/title-image.png" alt="画像">
-            </div>
-            -->
-        </div>
-    </main>
-
-    <footer>
-        <p>
-            <a href="https://x.com/Tokai_ATLEG" target="_blank">&copy;2025 ALTEGプログラミングサークル</a>
-        </p>
-    </footer>
-    <div id="err-size">
-        <div class="err-box">
-            <h1 class="ignore-index">⚠ 画面が小さすぎます</h1>
-            <p>このページはより広い画面での表示を推奨しています。</p>
-        </div>
+  <header class="site-header">
+    <div class="logo">Youta.</div>
+    <nav class="nav">
+      <a href="#top">Top</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+    </nav>
+    <div class="cta">
+      <a class="btn ghost" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
     </div>
+  </header>
 
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__content reveal">
+        <p class="eyebrow">ATLEGプログラミングサークル</p>
+        <h1>湯浅陽太</h1>
+        <p class="lede">
+          フロントエンドを中心に、体験をデザインするエンジニア。React と Django で手を動かしつつ、
+          Unity でインタラクティブ表現も探求中。旅行や読書で得た発想をプロダクトに落とし込むことが好きです。
+        </p>
+        <div class="hero__chips">
+          <span class="chip">React</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Django</span>
+          <span class="chip">Unity</span>
+        </div>
+        <div class="hero__actions">
+          <a class="btn primary" href="#skills">スキルを見る</a>
+          <a class="btn ghost" href="#about">自己紹介</a>
+        </div>
+        <div class="social">
+          <span class="social__label">SNS</span>
+          <a href="https://github.com" target="_blank" rel="noreferrer">
+            <img src="images/sns_logo/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://x.com" target="_blank" rel="noreferrer">
+            <img src="images/sns_logo/x.svg" alt="X" />
+          </a>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="profile-card">
+          <div class="profile-card__frame">
+            <img src="images/TestUser.png" alt="湯浅陽太の写真" />
+          </div>
+          <div class="profile-card__body">
+            <div>
+              <p class="muted">Based in</p>
+              <p class="title">Tokyo / Kanagawa</p>
+            </div>
+            <div class="profile-card__tags">
+              <span>Traveler</span>
+              <span>Reader</span>
+              <span>Maker</span>
+            </div>
+            <p class="mini">
+              シンプルなUIに遊び心を混ぜるのが得意。ミニマルなコードと心地よいUXを追求します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section__header reveal">
+        <p class="eyebrow">About</p>
+        <h2>自己紹介</h2>
+        <p class="muted">趣味や今ハマっている技術を、短くまとめました。</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__title">
+            <span class="dot"></span>
+            <h3>趣味</h3>
+          </div>
+          <ul class="pill-list">
+            <li>旅行</li>
+            <li>読書（技術書・小説をバランス良く）</li>
+          </ul>
+          <p class="muted">旅で得た景色や物語のアイデアを、UI の演出やコンセプトに活かしています。</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__title">
+            <span class="dot"></span>
+            <h3>ハマっている技術</h3>
+          </div>
+          <ul class="pill-list">
+            <li>figuma / UIデザイン</li>
+            <li>Unity でのインタラクティブ表現</li>
+          </ul>
+          <p class="muted">紙から始めるプロトタイピングと、Unity のモックでの高速検証を組み合わせています。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section__header reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>スキルセット</h2>
+        <p class="muted">よく使う技術と、触れたことのあるもの・学習中の領域を整理しました。</p>
+      </div>
+      <div class="skill-grid">
+        <article class="card reveal">
+          <div class="card__title">
+            <span class="dot"></span>
+            <h3>よく使う</h3>
+          </div>
+          <div class="skill-pill">
+            <span>React</span>
+            <small>SPA / UI設計</small>
+          </div>
+          <div class="skill-pill">
+            <span>JavaScript</span>
+            <small>モダンフロント実装</small>
+          </div>
+          <div class="skill-pill">
+            <span>Django</span>
+            <small>API / 認証</small>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card__title">
+            <span class="dot"></span>
+            <h3>使ったことがある</h3>
+          </div>
+          <div class="skill-pill">
+            <span>Flutter</span>
+            <small>モバイルUI</small>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card__title">
+            <span class="dot"></span>
+            <h3>学習中</h3>
+          </div>
+          <div class="skill-pill">
+            <span>3D 関連</span>
+            <small>Unity / リアルタイム表現</small>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">湯浅陽太</div>
+    <p class="muted">シンプルで心地よいプロダクトをつくり続けます。</p>
+    <div class="social">
+      <a href="https://github.com" target="_blank" rel="noreferrer">
+        <img src="images/sns_logo/github.svg" alt="GitHub" />
+      </a>
+      <a href="https://x.com" target="_blank" rel="noreferrer">
+        <img src="images/sns_logo/x.svg" alt="X" />
+      </a>
+    </div>
+  </footer>
+
+  <div class="bg-accent"></div>
+
+  <script src="script.js"></script>
 </body>
-<script src="./script.js"></script>
-
 </html>
